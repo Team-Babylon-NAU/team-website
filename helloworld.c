@@ -2,5 +2,6 @@
 
 int main(void)
 {
+# first comment
   printf("hello world\n");
 }
