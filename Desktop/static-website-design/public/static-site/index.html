@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0d14">
+  <title>Nexus Project</title>
+  <meta name="description" content="A minimalist project showcase website">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <header class="site-nav">
+    <nav class="inner">
+      <button class="logo" data-nav="home"><span class="brace">{</span> Nexus <span class="brace">}</span></button>
+      <div class="nav-links">
+        <button class="nav-link active" data-nav="home">Home</button>
+        <button class="nav-link" data-nav="overview">Overview</button>
+        <button class="nav-link" data-nav="details">Details</button>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="active" data-nav="home">Home</button>
+      <button data-nav="overview">Overview</button>
+      <button data-nav="details">Details</button>
+    </div>
+  </header>
+
+  <!-- =========== HOME PAGE =========== -->
+  <div id="page-home" class="page active">
+    <section class="hero stagger">
+      <div class="badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        Innovation Lab
+      </div>
+      <h1 class="text-balance">Building the <span class="accent">Future</span> of Digital</h1>
+      <p class="subtitle">A comprehensive project showcase demonstrating cutting-edge technologies, innovative solutions, and a world-class team committed to excellence.</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" data-nav="overview">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          Project Overview
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <button class="btn btn-outline" data-nav="details">
+          Project Details
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </div>
+      <div class="scroll-hint">
+        <span>Explore</span>
+        <div class="bar"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- =========== OVERVIEW PAGE =========== -->
+  <div id="page-overview" class="page">
+    <section class="section">
+      <div class="wrap">
+        <div class="reveal mb-16">
+          <p class="page-label font-mono">01 / Overview</p>
+          <h2 class="page-title text-balance">Project Overview</h2>
+        </div>
+
+        <!-- Intro Card -->
+        <div class="reveal mb-8">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              </div>
+              <h3 class="card-heading">Mission Statement</h3>
+            </div>
+            <p>Nexus is a next-generation platform designed to bridge the gap between complex enterprise workflows and intuitive user experiences. Our mission is to empower teams with tools that are both powerful and delightful to use, leveraging cutting-edge technology to deliver measurable impact at scale.</p>
+          </div>
+        </div>
+
+        <!-- Video Card -->
+        <div class="reveal mb-8">
+          <div class="video-card">
+            <div class="video-area">
+              <div class="play-wrap">
+                <button class="play-btn" aria-label="Play demo video">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </button>
+                <span class="video-label">Watch Project Demo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solution Card -->
+        <div class="reveal mb-16">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+              </div>
+              <h3 class="card-heading">Our Solution</h3>
+            </div>
+            <p>We developed an integrated platform that unifies data pipelines, real-time analytics, and collaborative workspaces into a single cohesive experience. By combining machine learning-driven insights with an elegant interface, Nexus reduces operational overhead by 60% while increasing team productivity.</p>
+            <div class="stats">
+              <div class="stat-box">
+                <div class="stat-val font-mono">60%</div>
+                <div class="stat-label">Overhead Reduction</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-val font-mono">3x</div>
+                <div class="stat-label">Faster Deployment</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-val font-mono">99.9%</div>
+                <div class="stat-label">Uptime Guarantee</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="reveal">
+          <div class="team-header">
+            <div class="left">
+              <div class="card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3>The Team</h3>
+            </div>
+            <div class="team-arrows">
+              <button id="team-left" aria-label="Scroll team left">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button id="team-right" aria-label="Scroll team right">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="team-scroll" id="team-scroll">
+            <div class="member-card">
+              <div class="member-avatar avatar-a"><span>SC</span></div>
+              <h4>Sarah Chen</h4>
+              <div class="role font-mono">Project Lead</div>
+              <div class="desc">Orchestrates cross-functional teams with a vision for scalable product delivery.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar avatar-b"><span>MR</span></div>
+              <h4>Marcus Rivera</h4>
+              <div class="role font-mono">Lead Engineer</div>
+              <div class="desc">Architects robust backend systems and drives technical excellence across the stack.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar avatar-a"><span>AT</span></div>
+              <h4>Aiko Tanaka</h4>
+              <div class="role font-mono">UX Designer</div>
+              <div class="desc">Crafts intuitive user experiences grounded in research and accessibility best practices.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar avatar-b"><span>DO</span></div>
+              <h4>David Okonkwo</h4>
+              <div class="role font-mono">Data Scientist</div>
+              <div class="desc">Transforms complex datasets into actionable insights powering intelligent features.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar avatar-a"><span>EP</span></div>
+              <h4>Elena Petrova</h4>
+              <div class="role font-mono">DevOps Engineer</div>
+              <div class="desc">Ensures seamless CI/CD pipelines and rock-solid infrastructure reliability.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar avatar-b"><span>JM</span></div>
+              <h4>James Mitchell</h4>
+              <div class="role font-mono">Frontend Developer</div>
+              <div class="desc">Builds performant, accessible interfaces with a keen eye for pixel-perfect design.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar avatar-a"><span>PS</span></div>
+              <h4>Priya Sharma</h4>
+              <div class="role font-mono">QA Lead</div>
+              <div class="desc">Champions quality through automated testing strategies and meticulous code reviews.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- =========== DETAILS PAGE =========== -->
+  <div id="page-details" class="page">
+    <section class="section">
+      <div class="wrap">
+        <div class="reveal mb-16">
+          <p class="page-label font-mono">02 / Details</p>
+          <h2 class="page-title text-balance">Project Details</h2>
+        </div>
+
+        <!-- Technologies Card -->
+        <div class="reveal mb-8">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+              </div>
+              <h3 class="card-heading">Technologies Used</h3>
+            </div>
+            <div class="tech-tags">
+              <div class="tech-tag"><span class="name">React</span><span class="cat font-mono">Frontend</span></div>
+              <div class="tech-tag"><span class="name">TypeScript</span><span class="cat font-mono">Language</span></div>
+              <div class="tech-tag"><span class="name">Next.js</span><span class="cat font-mono">Framework</span></div>
+              <div class="tech-tag"><span class="name">Node.js</span><span class="cat font-mono">Runtime</span></div>
+              <div class="tech-tag"><span class="name">PostgreSQL</span><span class="cat font-mono">Database</span></div>
+              <div class="tech-tag"><span class="name">Redis</span><span class="cat font-mono">Cache</span></div>
+              <div class="tech-tag"><span class="name">Docker</span><span class="cat font-mono">DevOps</span></div>
+              <div class="tech-tag"><span class="name">GraphQL</span><span class="cat font-mono">API</span></div>
+              <div class="tech-tag"><span class="name">Tailwind CSS</span><span class="cat font-mono">Styling</span></div>
+              <div class="tech-tag"><span class="name">AWS</span><span class="cat font-mono">Cloud</span></div>
+              <div class="tech-tag"><span class="name">Kubernetes</span><span class="cat font-mono">Orchestration</span></div>
+              <div class="tech-tag"><span class="name">TensorFlow</span><span class="cat font-mono">ML</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Card with Title -->
+        <div class="reveal mb-16">
+          <div class="video-card">
+            <div class="video-header">
+              <h3>Technical Deep Dive</h3>
+              <p>Architecture walkthrough and implementation details</p>
+            </div>
+            <div class="video-area">
+              <div class="play-wrap">
+                <button class="play-btn" aria-label="Play technical overview video">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </button>
+                <span class="video-label">Watch Technical Overview</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="reveal">
+          <div class="timeline-section">
+            <p class="page-label font-mono">Development Timeline</p>
+            <h3 class="page-title" style="margin-bottom:0">From Concept to Launch</h3>
+          </div>
+
+          <div class="timeline-wrap" id="timeline">
+            <div class="tl-line"></div>
+            <div class="tl-progress" id="tl-progress"></div>
+
+            <!-- Item 0 - Left -->
+            <div class="tl-item" data-index="0">
+              <div class="tl-desktop">
+                <div style="text-align:right">
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Project Inception</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Initial research phase completed. Stakeholder interviews conducted and core requirements documented across 12 departments.</p>
+                  </div>
+                </div>
+                <div style="display:flex;justify-content:center"><div class="tl-dot" data-dot="0"></div></div>
+                <div style="text-align:left"><div style="padding-left:1rem"><span class="tl-date">January 2025</span></div></div>
+              </div>
+              <div class="tl-mobile">
+                <div class="dot-col"><div class="tl-dot" data-dot="0"></div></div>
+                <div>
+                  <div class="tl-date mb-2">January 2025</div>
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Project Inception</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Initial research phase completed. Stakeholder interviews conducted and core requirements documented across 12 departments.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 1 - Right -->
+            <div class="tl-item" data-index="1">
+              <div class="tl-desktop">
+                <div style="text-align:left"><div style="padding-right:1rem"><span class="tl-date">March 2025</span></div></div>
+                <div style="display:flex;justify-content:center"><div class="tl-dot" data-dot="1"></div></div>
+                <div style="text-align:right">
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Architecture Design</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>System architecture finalized with microservices pattern. Tech stack selected after evaluating 15+ frameworks and tools.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tl-mobile">
+                <div class="dot-col"><div class="tl-dot" data-dot="1"></div></div>
+                <div>
+                  <div class="tl-date mb-2">March 2025</div>
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Architecture Design</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>System architecture finalized with microservices pattern. Tech stack selected after evaluating 15+ frameworks and tools.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 - Left -->
+            <div class="tl-item" data-index="2">
+              <div class="tl-desktop">
+                <div style="text-align:right">
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Core Development</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Primary development sprint launched. API layer, database schemas, and authentication system built and stress-tested.</p>
+                  </div>
+                </div>
+                <div style="display:flex;justify-content:center"><div class="tl-dot" data-dot="2"></div></div>
+                <div style="text-align:left"><div style="padding-left:1rem"><span class="tl-date">May 2025</span></div></div>
+              </div>
+              <div class="tl-mobile">
+                <div class="dot-col"><div class="tl-dot" data-dot="2"></div></div>
+                <div>
+                  <div class="tl-date mb-2">May 2025</div>
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Core Development</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Primary development sprint launched. API layer, database schemas, and authentication system built and stress-tested.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 - Right -->
+            <div class="tl-item" data-index="3">
+              <div class="tl-desktop">
+                <div style="text-align:left"><div style="padding-right:1rem"><span class="tl-date">August 2025</span></div></div>
+                <div style="display:flex;justify-content:center"><div class="tl-dot" data-dot="3"></div></div>
+                <div style="text-align:right">
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>ML Integration</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Machine learning pipeline integrated for predictive analytics. Custom models trained on 2M+ data points for accuracy.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tl-mobile">
+                <div class="dot-col"><div class="tl-dot" data-dot="3"></div></div>
+                <div>
+                  <div class="tl-date mb-2">August 2025</div>
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>ML Integration</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Machine learning pipeline integrated for predictive analytics. Custom models trained on 2M+ data points for accuracy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 - Left -->
+            <div class="tl-item" data-index="4">
+              <div class="tl-desktop">
+                <div style="text-align:right">
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Beta Launch</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Closed beta released to 500 users. Collected feedback through surveys, interviews, and in-app analytics sessions.</p>
+                  </div>
+                </div>
+                <div style="display:flex;justify-content:center"><div class="tl-dot" data-dot="4"></div></div>
+                <div style="text-align:left"><div style="padding-left:1rem"><span class="tl-date">October 2025</span></div></div>
+              </div>
+              <div class="tl-mobile">
+                <div class="dot-col"><div class="tl-dot" data-dot="4"></div></div>
+                <div>
+                  <div class="tl-date mb-2">October 2025</div>
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Beta Launch</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Closed beta released to 500 users. Collected feedback through surveys, interviews, and in-app analytics sessions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5 - Right -->
+            <div class="tl-item" data-index="5">
+              <div class="tl-desktop">
+                <div style="text-align:left"><div style="padding-right:1rem"><span class="tl-date">December 2025</span></div></div>
+                <div style="display:flex;justify-content:center"><div class="tl-dot" data-dot="5"></div></div>
+                <div style="text-align:right">
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Performance Optimization</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Load time reduced by 70%. Database queries optimized. CDN deployed globally across 14 edge locations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tl-mobile">
+                <div class="dot-col"><div class="tl-dot" data-dot="5"></div></div>
+                <div>
+                  <div class="tl-date mb-2">December 2025</div>
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Performance Optimization</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Load time reduced by 70%. Database queries optimized. CDN deployed globally across 14 edge locations.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6 - Left -->
+            <div class="tl-item" data-index="6">
+              <div class="tl-desktop">
+                <div style="text-align:right">
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Public Release</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Full public launch with enterprise features. Onboarded 50+ organizations in the first week of general availability.</p>
+                  </div>
+                </div>
+                <div style="display:flex;justify-content:center"><div class="tl-dot" data-dot="6"></div></div>
+                <div style="text-align:left"><div style="padding-left:1rem"><span class="tl-date">February 2026</span></div></div>
+              </div>
+              <div class="tl-mobile">
+                <div class="dot-col"><div class="tl-dot" data-dot="6"></div></div>
+                <div>
+                  <div class="tl-date mb-2">February 2026</div>
+                  <div class="tl-card">
+                    <div class="tl-card-header">
+                      <h4>Public Release</h4>
+                      <svg class="ext-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
+                    <p>Full public launch with enterprise features. Onboarded 50+ organizations in the first week of general availability.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="inner">
+      <span class="copy">&copy; 2026 Nexus Project. All rights reserved.</span>
+      <div class="links">
+        <button data-nav="home">Home</button>
+        <button data-nav="overview">Overview</button>
+        <button data-nav="details">Details</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
